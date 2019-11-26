@@ -1,0 +1,21 @@
+#prob2:
+#a.)
+import pandas as pd
+data = pd.read_csv("cars.csv")
+x=data[['Model','cyl','hp','qsec','am','carb']]
+y=x.head(5)
+print(y)
+
+#b.)
+import pandas as pd
+data = pd.read_csv("cars.csv")
+df = pd.DataFrame(data)
+x=df.loc[df.Model == 'Mazda RX4']
+print(x)
+
+#c.)
+import pandas as pd
+data = pd.read_csv("cars.csv")
+df = pd.DataFrame(data)
+x= df.loc["Camaro Z28":"cyl"]
+print(x)
