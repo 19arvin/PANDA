@@ -1,0 +1,12 @@
+#prob1:
+#a.)
+import pandas as pd
+data = pd.read_csv("cars.csv")
+print(data)
+
+#b.)
+import pandas as pd
+data = pd.read_csv("cars.csv")
+x=data.head(5)
+y=data.tail(5)
+print(x,y)
